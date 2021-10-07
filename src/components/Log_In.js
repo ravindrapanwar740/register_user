@@ -5,27 +5,82 @@ import Register from "./Register";
 import Home from "./Home";
 import RegisterData from "../Action/RegisterData";
 import LoginAction from "../Action/LoginAction";
+//import HomeDataSearch from "../Actions/HomeDataSearch";
+import { useState } from 'react';
+
+
 
 class Log_In extends Component {
+  //
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       email:''
+    }
+    // this.search=this.search.bind(this)
+    // this.onSubmit=this.onSubmit.bind(this)
+
+    //
+    // const [email, setEmail] = useState('');
+    // let errorsObj = { email: '', password: '' };
+    // const [errors, setErrors] = useState(errorsObj);
+    // const [password, setPassword] = useState('');
+
+
+    //
+  }
+  //
+// check(e)
+//   {
+
+   
+//       e.preventDefault();
+//       let error = false;
+//       const errorObj = { ...errorsObj };
+//       if (email === '') {
+//           errorObj.email = 'Email is Required';
+//           error = true;
+//       }
+
+//       if (password === '') {
+//           errorObj.password = 'Password is Required';
+//           error = true;
+//       }
+
+//       setErrors(errorObj);
+
+//       if (error) return;
+//   }
+
+  //
   search(key) {
     console.log("Event input", key);
-    // if(key!='text')
-    // {
-    //   alert('no data match')
-    // }
-    // else{
-    //   console.log("data found")
-    // }
+    //
+// this.setState({[key.target.name]:key.target.value})
+    //
   }
 
   searchp(key) {
     console.log("Event password", key);
   }
+//
 
+// onSubmit(e)
+// {
+// e.preventDefault();
+// console.log(this.state)
+// }
+
+
+
+
+//
   render() {
     return (
-      <div>
-        <h1>Log in Page</h1>
+      <div >
+        <h1>LogIn Page</h1>
+        <div className="col-sm-6 offset-sm-5">
         <Router>
           {/* <Nav.Button></Nav.Button>
         <Button href="#link"> <Button to="home">Log In </Button>  </Button>  */}
@@ -35,17 +90,22 @@ class Log_In extends Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav.Link href="#link">
                 {/* <div class="form-group mx-sm-3 mb-2">    */}
-                <Form>
+                <Form >
                   <Form.Group
                     className="mb-3"
                     controlId="formBasicEmail"
+                    //
+                    // value={this.state.username}
+                    //
                     onChange={(event) => this.search(event.target.value)}
                   >
+
                     <Form.Label>Email address:</Form.Label>
+                   
                     <Form.Control type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
+                    {/* <Form.Text className="text-muted">
                       We'll never share your email with anyone else.
-                    </Form.Text>
+                    </Form.Text> */}
                   </Form.Group>
 
                   <Form.Group
@@ -56,12 +116,13 @@ class Log_In extends Component {
                     <Form.Label>Password:</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                   </Form.Group>
-                  {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
+{/* 
+                  <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
-                  </Form.Group> */}
-                  {/* <Button variant="primary" type="submit">
+                  </Form.Group>  */}
+                   <Button variant="primary" type="submit">
                     Submit
-                  </Button> */}
+                  </Button>
 
                   <Nav.Link href="#link">
                     <Link to="/home">Log in</Link>
@@ -73,15 +134,17 @@ class Log_In extends Component {
                     <Link to="/register">Register</Link>
                   </Nav.Link>
                 </Form>
-                {/* </div> */}
+              
               </Nav.Link>
             </Navbar.Collapse>
-          </Navbar>
+          </Navbar> 
 
           <Route path="/register" component={RegisterData} />
           <Route path="/home" component={LoginAction} />
+          {/* <Route path="/homadatasearch" component={HomeDataSearch} /> */}
         </Router>
       </div>
+     </div>
     );
   }
 }

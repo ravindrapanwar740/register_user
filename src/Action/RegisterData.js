@@ -31,7 +31,7 @@ class RegisterData extends Component {
     
         render() {
             return (
-              <div>
+              <div className="col-sm-6 offset-sm-3">
                 {/* <h1><Badge bg="danger">Creating...</Badge></h1> */}
                 <h1>Creating........</h1>
                                <div>

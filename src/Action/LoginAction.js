@@ -44,10 +44,14 @@ class LoginAction extends Component {
             <div className="row-search">
               <Table striped bordered hover>
                 <thead>
-                  <tr>
-                    <th>Username</th>
+                   <tr>   
+                {/*  <th>Name</th>
+                  <th>Lastname</th>
+                    <th>Username</th> */}
+                    <th></th>
                     {/* <th>Password</th> */}
                     <th>Email</th>
+                    <th></th>
                     
                   </tr>
                 </thead>
@@ -58,6 +62,7 @@ class LoginAction extends Component {
                       <td>
                         <b>{item.name}</b>
                       </td>
+
                       <td>
                         <b>{item.email}</b>
                       </td>
