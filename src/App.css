@@ -6,6 +6,16 @@
   margin: 0 auto;
   float: none; 
 }
+.th{
+  color:black;
+}
+.homepage-bgimage {
+  background: url("https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 150vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

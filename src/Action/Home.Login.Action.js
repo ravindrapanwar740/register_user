@@ -1,4 +1,6 @@
-export const userData=()={
-    'type':USER_DATA,
-    'payload':
-}
+export const userData=()=>{
+    // 'type':USER_DATA,
+    // 'payload':{
+    //     "name":,
+    //     "username":
+    }

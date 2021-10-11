@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar, Nav, Button, Form } from "react-bootstrap";
 import RegisterData from "../Action/RegisterData";
 
 class Register extends Component {
@@ -12,6 +12,8 @@ class Register extends Component {
           <Navbar expand="lg" variant="dark">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
+            
+
               <Nav.Link href="#link">
                 First Name: <input></input>
                 <br />
@@ -34,6 +36,7 @@ class Register extends Component {
 
                 <br />
               </Nav.Link>
+              
             </Navbar.Collapse>
           </Navbar>
           <Route path="/registerdata" component={RegisterData} />

@@ -45,20 +45,19 @@ class LoginAction extends Component {
               <Table striped bordered hover>
                 <thead>
                    <tr>   
-                {/*  <th>Name</th>
-                  <th>Lastname</th>
+                <th>Name</th>
+                 {/*<th>Lastname</th>
                     <th>Username</th> */}
-                    <th></th>
+                    {/* <th></th> */}
                     {/* <th>Password</th> */}
                     <th>Email</th>
-                    <th></th>
+                    {/* <th></th> */}
                     
                   </tr>
                 </thead>
                 <tbody>
                   {this.state.searchData.map((item) => (
                     <tr>
-                     
                       <td>
                         <b>{item.name}</b>
                       </td>

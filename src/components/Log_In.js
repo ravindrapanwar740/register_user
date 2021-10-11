@@ -8,7 +8,8 @@ import LoginAction from "../Action/LoginAction";
 //import HomeDataSearch from "../Actions/HomeDataSearch";
 import { useState } from 'react';
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee,faUserPlus,faWindowClose ,faSignInAlt} from '@fortawesome/free-solid-svg-icons'
 
 class Log_In extends Component {
   //
@@ -78,8 +79,10 @@ class Log_In extends Component {
 //
   render() {
     return (
-      <div >
-        <h1>LogIn Page</h1>
+      <div>
+       
+        <h1>LogIn<FontAwesomeIcon icon={faUserPlus}/></h1>
+       
         <div className="col-sm-6 offset-sm-5">
         <Router>
           {/* <Nav.Button></Nav.Button>
@@ -90,7 +93,7 @@ class Log_In extends Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav.Link href="#link">
                 {/* <div class="form-group mx-sm-3 mb-2">    */}
-                <Form >
+                <Form style={{"borderWidth":"3px", 'borderColor':"#aaaaaa", 'borderStyle':'solid'}}>
                   <Form.Group
                     className="mb-3"
                     controlId="formBasicEmail"
@@ -100,7 +103,7 @@ class Log_In extends Component {
                     onChange={(event) => this.search(event.target.value)}
                   >
 
-                    <Form.Label>Email address:</Form.Label>
+                    <Form.Label className="th">Email address:</Form.Label>
                    
                     <Form.Control type="email" placeholder="Enter email" />
                     {/* <Form.Text className="text-muted">
@@ -113,7 +116,7 @@ class Log_In extends Component {
                     controlId="formBasicPassword"
                     onChange={(event) => this.searchp(event.target.value)}
                   >
-                    <Form.Label>Password:</Form.Label>
+                    <Form.Label className="th">Password:</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                   </Form.Group>
 {/* 
@@ -125,13 +128,13 @@ class Log_In extends Component {
                   </Button>
 
                   <Nav.Link href="#link">
-                    <Link to="/home">Log in</Link>
+                    <Link to="/home" className="th">Log in<FontAwesomeIcon icon={faSignInAlt}/></Link>
                   </Nav.Link>
                   <Nav.Link href="#link">
-                    <Link to="/cancel">Cancel</Link>
+                    <Link to="/cancel" className="th">Cancel<FontAwesomeIcon icon={faWindowClose}/></Link>
                   </Nav.Link>
                   <Nav.Link href="#link">
-                    <Link to="/register">Register</Link>
+                    <Link to="/register" className="th">Register {window.Register}<FontAwesomeIcon icon={faUserPlus}/></Link>
                   </Nav.Link>
                 </Form>
               

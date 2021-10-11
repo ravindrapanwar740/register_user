@@ -39,14 +39,7 @@
       "email": "testcom6@test.com",
       "password": "123456",
       "id": 5
-    },
-    {
-      "name": "test5",
-      "lastname": "com5",
-      "username": "testcom5",
-      "email": "testcom5@test.com",
-      "password": null,
-      "id": 6
     }
+   
   ]
 }

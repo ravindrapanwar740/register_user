@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Form, Button, Badge, Placeholder, ProgressBar,InputGroup,FormControl} from "react-bootstrap";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee,faUserPlus,faWindowClose ,faSignInAlt,faPlusCircle} from '@fortawesome/free-solid-svg-icons'
+
 
 class RegisterData extends Component {
     constructor(props) {
@@ -33,9 +36,9 @@ class RegisterData extends Component {
             return (
               <div className="col-sm-6 offset-sm-3">
                 {/* <h1><Badge bg="danger">Creating...</Badge></h1> */}
-                <h1>Creating........</h1>
+                <h1>Creating..<FontAwesomeIcon icon={faPlusCircle}/></h1>
                                <div>
-                  <Form>
+                               <Form style={{"borderWidth":"3px", 'borderColor':"#aaaaaa", 'borderStyle':'solid'}}>
                     <Form.Control
                       type="text"
                       onChange={(event) => {

@@ -9,6 +9,8 @@ import Home from './components/Home';
 //import HomeDataSearch from './Actions/HomeDataSearch';
 //import {useDispatch} from 'react-redux'
 
+
+
 function App() {
   // const dispatch = useDispatch();
   // const handleOnClick=()=>
@@ -17,8 +19,7 @@ function App() {
   // }
   return (
     <div className="App">
-
-
+<div className="homepage-bgimage">
 
 {/* <button onClick={handleOnClick}>click</button>
  */}
@@ -36,6 +37,7 @@ function App() {
 {/* <HomeDataSearch /> */}
      {/* <Register /> */}
     </div>
+     </div>
   );
 }
 
